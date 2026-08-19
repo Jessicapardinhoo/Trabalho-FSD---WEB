@@ -59,7 +59,6 @@ nav a:hover {
 }
 
 
-
 /* Estilo do botão de alternância de tema */
 
 section {
@@ -129,6 +128,7 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 
 /* Tema escuro */
 
@@ -227,3 +227,39 @@ ul {
 li {
     margin-bottom: 8px;
 }
+
+/* Estilo da tabela paises*/
+/* Tabela */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Tema Claro */
+th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* Tema Escuro */
+.dark-mode th {
+    background-color: #333;
+    color: white;
+}
+
+table img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
