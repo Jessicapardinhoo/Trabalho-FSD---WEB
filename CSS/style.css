@@ -5,235 +5,74 @@
     box-sizing: border-box;
 }
 
-/* Estilo do corpo da página */
+/* Página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
- /* Estilo do conteúdo principal */
-main {
-    flex: 1;
+    line-height: 1.6;
 }
 
-/* Estilo do cabeçalho */
-
+/* Cabeçalho */
 header {
     background-color: #0078d7;
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Estilo da barra de navegação */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Estilo do título da navegação */
-nav h2 {
+header h1 {
     color: white;
 }
 
-/* Estilo da lista de links de navegação */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-/* Estilo dos links de navegação */
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Efeito de hover nos links de navegação */
-nav a:hover {
-    color: #4da6ff;
-}
-
-
-/* Estilo do botão de alternância de tema */
-
+/* Conteúdo */
 section {
-    background: white;
+    background-color: white;
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
 }
 
-/* Estilo dos títulos */
-h1, h2, h3 {
-    color: #0078d7;
-    margin-bottom: 15px;
-}
-
-/* Estilo dos projetos no portfólio */
-.projeto {
-    border-left: 4px solid #0078d7;
-    padding-left: 15px;
-    margin-bottom: 20px;
-}
-
-.projeto a {
-    color: #0078d7;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.projeto a:visited {
-    color: #0078d7;
-}
-
-.projeto a:hover {
-    text-decoration: underline;
-}
-
-
-/* Estilo do formulário */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Estilo dos campos de entrada e textarea */
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Estilo do botão de envio */
-button {
-    padding: 10px 15px;
-    cursor: pointer;
-    background-color: #0078d7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Estilo do rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-}
-
-
-/* Tema escuro */
-
-/* Estilo do corpo da página no modo escuro */
-.dark-mode {
-    background-color: #2b2b2b;
-    color: white;
-}
-
-/* Estilo do conteúdo principal no modo escuro */
-.dark-mode section {
-    background-color: #3a3a3a;
-}
-
-/* Estilo dos títulos no modo escuro */
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3 {
-    color: white;
-}
-
-/* Estilo do cabeçalho e rodapé no modo escuro */
-.dark-mode header,
-.dark-mode footer {
-    background-color: #1e1e1e;
-}
-
-/* Estilo da barra de navegação no modo escuro */
-.dark-mode nav a {
-    color: white;
-}
-
-/* Efeito de hover nos links de navegação no modo escuro */
-.dark-mode nav a:hover {
-    color: white;
-}
-
-/* Estilo dos projetos no portfólio no modo escuro */
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3 {
-    color: white;
-}
-
-.dark-mode .projeto a {
-    color: white;
-    font-weight: bold;
-}
-
-.dark-mode .projeto {
-    border-left: 4px solid white;
-}
-
-.projeto a {
-    display: block;
-    margin-top: 15px;
-    color: #0078d7;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Estilo do botão de alternância de tema no modo escuro */
-.dark-mode #temaBtn {
-    background-color: #333;
-    color: white;
-    border: 1px solid #555;
-}
-
-/* Efeito de hover no botão de alternância de tema no modo escuro */
-.dark-mode button {
-    background-color: #3a3a3a;
-    color: white;
-    border: 1px solid #555;
-}
-.dark-mode button:hover {
-    background-color: #4a4a4a;
-}
-
-
-/* Estilo do formulário no modo escuro */
-.dark-mode footer {
-    background: none;
-    color: white;
-}
-
+/* Títulos */
 h2 {
-    margin-top: 25px;
+    color: #0078d7;
     margin-bottom: 15px;
 }
 
+/* Parágrafos */
+p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Lista de hobbies */
 ul {
     margin-left: 25px;
-    margin-bottom: 20px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
-/* Estilo da tabela paises*/
+/* Imagem do hobby */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
 /* Tabela */
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
 }
 
 th,
@@ -243,23 +82,47 @@ td {
     text-align: center;
 }
 
-/* Tema Claro */
-th {
-    background-color: #4a90e2;
-    color: white;
-}
-
-/* Tema Escuro */
-.dark-mode th {
-    background-color: #333;
-    color: white;
-}
-
 table img {
     width: 150px;
     height: 100px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
+/* Links */
+a {
+    color: #0078d7;
+    font-weight: bold;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #ff6600;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0078d7;
+    color: white;
+}
+
+/* Botão e mensagem */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0078d7;
+}
